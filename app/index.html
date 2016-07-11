@@ -1,0 +1,26 @@
+<html ng-app = "recipeApp">
+<head>
+	<title>Recipe</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body ng-controller="RecipeAppController">
+	<div class="header">Recipe Bot
+		<input type="text" placeholder="I have ..."></div>
+		<div class="recipeList">
+		<div class="recipeCard">
+			<div class="title">{{recipe.title}}</div>
+			<div class="img"><img ng-src="recipe.image"</img></div>
+			<div class="bottom">
+				<div class="used">Have {{recipe.usedIngredientCount}}</div>
+				<div class="missing"> Missing {{recipe.missedIngredientCount}}</div>
+				<div class="likes">{{recipe.likes}} Likes</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.min.js"></script>
+	<script src="app.js"></script>
+	<script src="controllers.js"></script>
+	<script src="services.js"></script>
+</body>
+</html>
